@@ -1,102 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Aleksander Łoszakow | Junior Fullstack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="header">
-        <h1>Aleksander Krolik</h1>
-        <p>As an aspiring <span class="highlight">Junior Java Developer</span>,
-            I bring enthusiasm and a solid grasp of Java fundamentals
-            from self-learning. <br>Eager to explore technologies like Spring Framework,
-            Hibernate, and Maven, I'm dedicated to honing my skills. <br>My experience includes
-            creating simple applications, refining problem-solving abilities, and I'm eager
-            to collaborate within teams. <br>I'm committed to continuous learning and aspire to
-            contribute meaningfully to Java development projects.
-        </p>
-        <!-- <embed src="Aktualne CV.pdf" type="application/pdf" width="100%" height="600px" /> -->
-    </div>
 
-    <div class="skills">
-        <div><p>Core Java</p></div>
-        <div><p>Spring Web</p></div>
-        <div><p>Maven</p></div>
-        <div><p>SQL</p></div>
-        <div><p>Database Management System</p></div>
-        <div><p>Javascript</p></div>
-        <div><p>PHP</p></div>
-        <div><p>Git</p></div>
+<header class="header">
+    <div class="container header__content">
+        <a href="#hero" class="header__brand">
+            <span class="material-symbols-outlined brand__icon">terminal</span>
+            <span class="brand__name">aleksandro.dev</span>
+        </a>
+        <nav class="header__nav">
+            <a href="#about">O mnie</a>
+            <a href="#workflow">Jak pracuję</a>
+            <a href="#experience">Doświadczenie</a>
+            <a href="#projects">Projekty</a>
+        </nav>
+        <a href="mailto:aleksander.loszakow@gmail.com" class="btn btn-outline">Kontakt</a>
     </div>
+</header>
 
-    <div class="projects">
-          <div class="section-title">
-            <h2>Projects</h2>
+<main class="container">
+    <section class="hero" id="hero">
+        <div class="badge">
+            <span class="badge__dot"></span>
+            Dostępny do pracy
         </div>
-        <div class="project-container">
-            <div class="project">
-                <h3>File Sorter</h3>
-                <p>
-                    The desktop application was created using <span class="highlight">Java</span> and aimed
-                     to sort files within a directory created by the application
-                      using one of three methods: alphabetically, by creation date,
-                       and by file extension (e.g., .java, .pdf).
-                        To support user-friendly operation, <span class="highlight">JavaFX</span> was used
-                         to create a graphical interface. The software was tested
-                          using <span class="highlight">JUnit5</span> for OutOfMemory scenarios and minor details
-                           that could potentially disrupt proper functionality.</p>
+        <h1 class="hero__title">Aleksander Łoszakow</h1>
+        <h2 class="hero__subtitle">Junior Fullstack Developer (.NET / REST API)</h2>
+        <p class="hero__description">Specjalizuję się w tworzeniu API w ekosystemie .NET. Stawiam na czysty kod, solidną architekturę backendową i ciągły rozwój.</p>
+        <div class="hero__action">
+            <a href="https://github.com/Dicenicepl" target="_blank" class="btn btn-primary">
+                <span class="material-symbols-outlined">code</span> GitHub
+            </a> 
+            <a href="#experience" class="btn btn-outline">Doświadczenie</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section__header">
+            <h2>O mnie</h2>
+            <div class="line"></div>
+        </div>
+        <div class="grid grid-2">
+            <div class="about__text">
+                <p>Jestem programistą z silnymi fundamentami w C# i SQL. Posiadam doświadczenie w projektowaniu logiki biznesowej oraz walidacji API.</p>
+                <p style="margin-top: 16px;">Moje podejście opiera się na samodzielnej inicjatywie połączonej z umiejętnością pracy w zespole, nawet pod presją czasu.</p>
             </div>
-            <div class="project">
-                <h3>Next App Title</h3>
-                <p>Next App Description</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="experience">
-        <div class="section-title">
-            <h2>Experience</h2>
-        </div>
-        <div class="experience-container">
-            <div class="experience-item">
-                <h3>Intern Java Developer</h3>
-                <span>03.2023 - 09.2023</span><br>
-                <p>In my role as a Junior Intern Java Developer, I had the opportunity to engage in various aspects of the software development process. My tasks involved supporting the development team by writing Java code, creating and testing simple applications, as well as participating in debugging and error-fixing tasks. I actively participated in code review sessions, enabling me to gain valuable insights and a better understanding of coding standards.</p>
+            <div class="card">
+                <h3 style="margin-bottom: 16px; font-size: 0.9rem; letter-spacing: 1px; color: var(--primary);">FILOZOFIA PRACY</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                    <li style="display: flex; gap: 8px; align-items: center;">
+                        <span class="material-symbols-outlined" style="color: var(--primary); font-size: 20px;">check_circle</span> Clean Code & Maintainability</li>
+                    <li style="display: flex; gap: 8px; align-items: center;"><span class="material-symbols-outlined" style="color: var(--primary); font-size: 20px;">check_circle</span> Problem-solving Attitude</li>
+                    <li style="display: flex; gap: 8px; align-items: center;"><span class="material-symbols-outlined" style="color: var(--primary); font-size: 20px;">check_circle</span> Growth Mindset</li>
+                </ul>
             </div>
         </div>
+    </section>
+
+    <section id="workflow">
+        <div class="section__header">
+            <h2>Jak pracuję</h2>
+            <div class="line"></div>
+        </div>
+        <div class="grid grid-3">
+            <div class="card workflow__card">
+                <span class="material-symbols-outlined workflow__icon">architecture</span>
+                <h3>Budowanie fundamentów</h3>
+
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Konstruuję rozwiązania tak, aby każde żądanie było obsłużone optymalnie i zgodnie z logiką biznesową projektu.</p>
+            </div>
+            <div class="card workflow__card">
+                <span class="material-symbols-outlined workflow__icon">gpp_maybe</span>
+                <h3>Budowanie zabezpieczeń</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Implementuję Crash Handlery, walidację danych oraz mechanizmy sprawdzania poprawności stanów aplikacji.</p>
+            </div>
+            <div class="card workflow__card">
+                <span class="material-symbols-outlined workflow__icon">brush</span>
+                <h3>Budowanie grafiki</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Dbam o estetykę i intuicyjność interfejsu, łącząc funkcjonalność z nowoczesnym wyglądem wizualnym.</p>
+            </div>
+            <div class="card workflow__card">
+                <span class="material-symbols-outlined workflow__icon">biotech</span>
+                <h3>Pełne testowanie</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Weryfikuję każdą funkcjonalność przed wdrożeniem, upewniając się, że system jest stabilny i gotowy do pracy.</p>
+            </div>
+            <div class="card workflow__card">
+                <span class="material-symbols-outlined workflow__icon">description</span>
+                <h3>Dokumentacja</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Dostarczam przejrzystą dokumentację kodu i API, co ułatwia współpracę w zespole i późniejszy rozwój.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack">
+        <div class="section__header">
+            <h2>Tech Stack</h2>
+            <div class="line"></div>
+        </div>
+        <div class="grid grid-3">
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <span class="material-symbols-outlined" style="color: var(--primary);">settings_ethernet</span>
+                    <h3>Backend</h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <span class="tag">.NET Core</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Java / Spring</span>
+                    <span class="tag">Python (Flask)</span>
+
+                </div>
+            </div>
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <span class="material-symbols-outlined" style="color: var(--primary);">database</span>
+                    <h3>Bazy Danych</h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <span class="tag">SQL</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+
+                    <span class="material-symbols-outlined" style="color: var(--primary);">construction</span>
+                    <h3>Narzędzia</h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <span class="tag">Git</span>
+                    <span class="tag">Postman</span>
+                    <span class="tag">Jira</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section__header">
+            <h2>Doświadczenie</h2>
+            <div class="line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__date">PAŹDZIERNIK 2025 — OBECNIE</div>
+                <h3>Fullstack Web/Mobile Developer @ Linkball</h3>
+                <p style="color: var(--text-muted);">Rozwijanie usług REST API, zarządzanie relacyjnymi bazami danych i implementacja komponentów frontendowych.</p>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__date">MARZEC 2024 — SIERPIEŃ 2024</div>
+                <h3>Manual Game Tester @ Lionbridge</h3>
+                <p style="color: var(--text-muted);">
+                    Testowanie wydajności i zgodności w "Star Wars Hunters". Raportowanie błędów w Jira.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section__header">
+            <h2>Edukacja</h2>
+            <div class="line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__date">2025 — 2029</div>
+                <h3>Akademia WIT</h3>
+                <p style="color: var(--text-muted);">Zarządzanie Technologiami Informacyjnymi (Studia inżynierskie).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section__header">
+            <h2>Kluczowe Projekty</h2>
+            <div class="line"></div>
+        </div>
+        <div class="grid grid-2">
+            <div class="card project__card">
+                <div>
+                    <h3>Budget Manager</h3>
+                    <p style="color: var(--text-muted); margin: 12px 0; font-size: 0.95rem;">Aplikacja do śledzenia wydatków z generowaniem raportów PDF i zaawansowaną obsługą plików systemowych.</p>
+                    <div class="project__tech">
+                        <span class="tag">.NET 8</span>
+                        <span class="tag">EF Core</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Dicenicepl" target="_blank" class="project__link">
+                    <span class="material-symbols-outlined">code</span> GitHub
+                </a>
+            </div>
+            
+            <div class="card project__card">
+                <div>
+                    <h3>Student Org System</h3>
+                    <p style="color: var(--text-muted); margin: 12px 0; font-size: 0.95rem;">Backend w Flask z API REST, SQLAlchemy i rygorystyczną walidacją requestów JSON.</p>
+                    <div class="project__tech">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLAlchemy</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Dicenicepl" target="_blank" class="project__link">
+                    <span class="material-symbols-outlined">code</span> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="ending">
+        <h2>Zbudujmy coś razem.</h2>
+        <p style="color: var(--text-muted); margin-bottom: 32px;">Szukam wyzwań programistycznych i możliwości rozwoju w technologiach .NET.</p>
+        <div class="contact__grid">
+            <a href="mailto:aleksander.loszakow@gmail.com" class="contact__card">
+                <span class="material-symbols-outlined">mail</span>
+                <span>Email</span>
+            </a> 
+            <a href="https://github.com/Dicenicepl" target="_blank" class="contact__card">
+                <span class="material-symbols-outlined">terminal</span>
+                <span>GitHub</span>
+            </a> 
+            <a href="https://linkedin.com/in/aleksander-łoszakow" target="_blank" class="contact__card">
+                <span class="material-symbols-outlined">account_tree</span>
+                <span>LinkedIn</span>
+            </a> 
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Aleksander Łoszakow. Junior Fullstack Developer.</p>
     </div>
-    
+</footer>
 
-    <div class="myPrivateLife">
-        <h3>My private life</h3>
-       <p>In 2020, I began my studies at the Polish Technical Secondary School ZS14 in the field of IT Technician. As a result, I gained extensive knowledge in the areas of:
-            Programming
-            Technical aspects
-            Logistics
-            Administration
-            In 2023, I passed the inf.02 qualification. Currently, I am preparing to participate in the inf.03 qualification.</p>
-        <a href="https://github.com/Dicenicepl/Dicenicepl.github.io/blob/main/Aktualne%20CV.pdf" target="_blank">Interested? Download my CV</a>
-    </div>
-
-    <div class="contact-form">
-        <form action="mailto:aleksander.krolik.pl@gmail.com" method="post" enctype="text/plain">
-            <h2>Contact with me</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Send">
-        </form>
-    </div>
 </body>
-
 </html>
