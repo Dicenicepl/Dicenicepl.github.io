@@ -180,10 +180,16 @@ section {
 
 .grid-2 { grid-template-columns: 1fr; }
 .grid-3 { grid-template-columns: 1fr; }
+.grid-4 { grid-template-columns: 1fr; }
 
 @media (min-width: 768px) {
     .grid-2 { grid-template-columns: 1fr 1fr; }
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 
 .card {
@@ -237,15 +243,24 @@ section {
     border-radius: 50%;
 }
 
-.timeline__dot--muted {
-    background: #334155;
+.education__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
 }
 
-.timeline__date {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
+.edu-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(37, 209, 244, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 6px;
     color: var(--primary);
-    margin-bottom: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
 }
 
 .project__card {
@@ -273,10 +288,6 @@ section {
     border-top: 1px solid var(--border-color);
 }
 
-.project__link:hover {
-    color: var(--primary);
-}
-
 .contact__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -298,9 +309,8 @@ section {
 }
 
 .contact__card:hover {
-    background: rgba(37, 209, 244, 0.1);
     border-color: var(--primary);
-    transform: scale(1.02);
+    background: rgba(37, 209, 244, 0.1);
 }
 
 .contact__card span:first-child {
